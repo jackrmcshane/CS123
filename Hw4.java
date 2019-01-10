@@ -23,6 +23,7 @@ public class Hw4{
     int month;
     int day;
     int year;
+    boolean isLeapYear = false;
 
     firstIndex = IndexOf.dateString( '/' );
     secondIndex = IndexOf.dateString( '/' , firstIndex );
@@ -35,5 +36,21 @@ public class Hw4{
     day = Integer.parseInt( dayString );
     year = Integer.parseInt( yearString );
 
+    //check month
+    if( monthString.length() != 2 ){
+      System.out.println( "Error with month. Must contain two digits." );
+      return;
+    }
+    elseif( month < 1 || month > 12 ){
+      System.out.println( "Error with month. Out of bounds." );
+      return;
+    }
+    //check day
+    elseif( dayString.length() != 2 ){
+      System.out.println( "Error with day. Must contain two digits." );
+      return;
+    }
+    elseif( )
+    //check year
   }
 }
